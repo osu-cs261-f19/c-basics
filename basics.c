@@ -11,6 +11,11 @@ int main(int argc, char** argv) {
   double pi = 3.1415;
   char a = 'a';
 
+  /*
+   * The line below is basically equivalent to the following line of C++:
+   *
+   * std::cout << "Hello world." << std::endl;
+   */
   printf("Hello world.\n");
 
   /*
