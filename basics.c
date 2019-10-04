@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+#include "student.h"
+
 /*
  * A prototype for the function foo().
  */
@@ -59,6 +61,11 @@ int main(int argc, char** argv) {
   foo(2);
   foo(4);
   foo(8);
+
+  struct student s = {.gpa = 3.75, .name = "Luke Skywalker"};
+
+  s.id = 933111111;
+  printf("\n%s %d %f\n", s.name, s.id, s.gpa);
 
   return 0;
 }
